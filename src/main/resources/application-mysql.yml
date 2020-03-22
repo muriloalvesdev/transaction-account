@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost/transactions?createDatabaseIfNotExist=true&useSSL=false&useTimezone=true&serverTimezone=America/Fortaleza&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234
+  jpa:
+    database: MYSQL
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL57Dialect
